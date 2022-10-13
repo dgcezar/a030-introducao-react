@@ -4,7 +4,6 @@ body {
   margin: 0;
 }
 
-
 .tela-inteira {
   height: 100vh;
   display: flex;
@@ -84,17 +83,12 @@ main {
   grid-row-start: 3;
 }
 
-
 .box-pagina-principal {
-  display: grid;
-  grid-template-rows: 3fr 1fr;
-  grid-template-columns: 1fr;
-  border-style: solid;
-  border-width: thin; 
-  align-items: start;
-  justify-items: stretch;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-
 
 footer {
   height: 10%;
@@ -114,3 +108,19 @@ h4 {
   margin-left: 20px;
 }
 
+#usuario-imagem {
+  display: grid;
+  margin-left: 6px;
+  width: 30px;
+  height: 30px;
+}
+
+.usuario-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+h3 {
+  margin-left: 8px;
+  font-size: 12px;
+}
